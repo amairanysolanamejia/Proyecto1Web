@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Currículum Vitae</title>
+	<link rel="shorcut icon" type="image/png" href="img/icons8-analizando-habilidad-50.png">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header> <!-- navbar -->
+		<nav>
+		   <div class="nav-wrapper green lime darken-1"> <!-- red lighten-1 se lo agrego después e wrapper para cambiarle el color -->
+		     <a href="#!" class="brand-logo center"><img class="resposive-img" src="img/icons8-currículum-64.png" alt="imagen" ></a> <!-- aquí le quiteé lo que decía ">LOGO<"  y le puse una resposiva-->
+		     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Opciones</i></a>
+		     <ul class="right hide-on-med-and-down">
+		       <li><a href="index.html">Quién soy</a></li> <!--  aquí pude poner en vex de "index.html " un # , si le presionamos aquí, lo dejamos de-->
+		       <!-- control a es seleccionar todo -->
+		       <li><a href="estudios.html">Estudios</a></li>
+		       <li><a href="experiencia.html">Experiencia</a></li>
+		       <li><a href="contacto.html">Contacto</a></li>
+		     </ul>
+		   </div>
+		 </nav>
+
+		  <ul class="sidenav" id="mobile-demo">
+		  <li><a href="index.html">Quén soy</a></li>
+		   <li><a href="estudios.html">Estudios</a></li>
+		   <li><a href="experiencia.html">Experiencia</a></li>
+		   <li><a href="contacto.html">Contacto</a></li>
+		 </ul>
+	</header>
+
+	<main>
+
+	  <div class="container">
+	  	<div align="center">
+	  		<h1>Contacto</h1>
+	  	</div>
+	  
+	    <div class="row">
+	      <div class="col s12 m6">
+	        <form action="mensaje.php" method="post">
+	          <div class="row">
+	            <div class="input-field col s6">
+	              <i class="material-icons prefix"></i>
+	              <input id="icon_prefix" type="text" class="validate" name="nombre" required>
+	              <label for="icon_prefix">Nombre</label>
+	            </div>
+	            <div class="input-field col s6">
+	              <i class="material-icons prefix"></i>
+	              <input id="email" type="email" class="validate" name="correo" required>
+	              <label for="email" data-error="Correo no valido" data-success="Correo valido">Email</label>
+	            </div>
+	          </div>
+	          <h6>Mensaje</h6>
+	          <div class="input-field col s12">
+	            <textarea name="mensaje" id="textarea1" class="materialize-textarea"></textarea>
+	            <label for="textarea1" required>Texto</label>
+	          </div>
+	          <input type="submit" value="Enviar" >
+	        </form>
+	      </div>
+	      <div class="col s12 m6">
+	       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4985302972004!2d-98.85857598570983!3d19.30416184977874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1f7512e0e421%3A0xc00085e39a2d241f!2sAv+Paseo+de+los+Poetas+%26+Calle+Mario+Vargas+Llosa%2C+San+Marcos+Huixtoco%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1540117087632" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	      </div>
+	    </div>
+
+	  </div>
+	  <div class="circulo"></div>
+	</main>
+	<!-- footer -->
+	<footer class="page-footer green lime darken-1">
+	          <div class="container">
+	            <div class="row">
+	              <div class="col l6 s12">
+	                <h5 class="white-text">Contacto</h5>
+	                <p class="grey-text text-lighten-4">Domicilio: Cto Mario Vargas Llosa, calle Paseo de los poetas, San Marcos Huixtoco, Estado de México</p>
+	              </div>
+	              <div class="col l4 offset-l2 s12">
+	                <h5 class="white-text">Links</h5>
+	                <ul>
+	                  <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+	                  <a class="github-button" href="https://github.com/amairanysolanamejia" data-size="large" aria-label="Follow @ntkme on GitHub">Follow @amairanysolanamejia</a>
+	                  <li><a class="grey-text text-lighten-3" href="#!">Correo electrónico</a></li><a href=" Correo electrónico: amairany.solanamejia@gmail.com" aria-label="Follow @ntkme on GitHub">amairany.solanamejia@gmail.com></a>
+	                 
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+	</footer>
+
+
+
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</html>

@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+}
+
+body{
+background-color: white;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1, #estud,#quien{
+    color:  white;
+    background: #640A40;
+    border-radius: 15%;
+    content: center;
+    padding: 25px;  
+
+}
+#para{/*le pongo el puntito poruqe es una clase y img 
+para que sepa que me refiero a la clase
+    voy a editarlo */
+    width: 30%;
+    height: 30%; /*aquí para hacerlo respnsivo se pone auto*/
+ }
+ iframe {
+ max-width: 100%;
+ height: auto;
+}
+
+#estud,#quien{
+    color:640A40 ;
+    padding: 3px 10px;
+  border: #640A40 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+
+}
+#contenedor {
+  width: 95%;
+  max-width: 60%;
+}
+
+#mifo{ /*Según me permite modificar el tamaño*/
+    width: 60%;
+    height: 260%;
+}
+
+label{
+	color: white;
+	font-size: 1.5em;
+}
+form{
+	margin: 4% 5%;
+}
+input[type = text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #9e9d24;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #afb42b ;
+}
+
+
+#descrip{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#object{
+ background-color: #fe5652;
+visibility: hidden;
+}
+
+.circulo
+{
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+  background-color: #511562;
+  animation: circulo 3s linear 2s infinite;
+}
+@keyframes circulo
+{ /*para la sombras se reciben 4 parámetros, los más importantes son los dos primeros
+  los cuales el primero es el eje X y el segundo el eje Y, por así decirlo.
+  Dicen la posición de donde partirán las sombras y a dónde llegarán, en este caso,
+  le puse solamente al eje X valores para que se vea un efecto horizontal. Jueguen con ellos*/
+  from{box-shadow:
+    100px 0 0 0 red,
+    200px 0 0 5 black,
+    300px 0 0 0 white,
+    400px 0 0 0 red,
+    500px 0 0 0 black,
+    700px 0 0 0 white,
+    900px 0 0 5 white;}
+  to{box-shadow:
+    0px 0 0 0 black,
+    -250px 0 0 0 brown,
+    500px 0 0 0 #C384D8,
+    -250px 0 0 0 brown,
+    900px 0 0 0 #C384D8,
+    -1100px 0 0 0 brown;
+  }
+}
